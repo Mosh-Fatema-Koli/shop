@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
-import 'package:shop/src/view/home/home.dart';
+
 
 class IconWidget extends StatelessWidget {
   const IconWidget({
@@ -51,8 +51,8 @@ setAppBar() {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.location_on,color: Colors.red,),
-              Text("Mondolibug, Sylhet",style: TextStyle(color: Colors.black,fontSize: 16),),
+              Icon(Icons.location_on,color: Colors.red,size: 15,),
+              Text("Mondolibug, Sylhet",style: TextStyle(color: Colors.black,fontSize: 14),),
             ],
           )
         ],

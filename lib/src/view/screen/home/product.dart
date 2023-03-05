@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shop/src/view/product/dtls.dart';
+import 'package:shop/src/view/screen/product/dtls.dart';
 
 class Product extends StatefulWidget {
   const Product({Key? key}) : super(key: key);
@@ -33,17 +33,18 @@ class _ProductState extends State<Product> {
             Padding(
               padding: const EdgeInsets.all(10),
               child: Container(
-                height: 200,
+                height: 205,
+                width: 157,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(30)
+                  borderRadius: BorderRadius.circular(20)
                 ),
                 child: Column(
                   children: [
                     Container(
                         decoration: BoxDecoration(
                         color: Colors.white,
-                          borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight: Radius.circular(30),)),
+                          borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20),)),
                               height: 100,
 
                       child: Image.asset("images/Frame 294.png",height: 80,width: 150,fit: BoxFit.cover,),
@@ -57,25 +58,25 @@ class _ProductState extends State<Product> {
                               style: TextStyle(
                                 color: Colors.blue,
                                 fontWeight: FontWeight.w500,
-                                fontFamily: "Airbnb Cereal App",
-                                fontSize: 16,
+                                fontFamily: "Airbnb Cereal",
+                                fontSize: 12,
                               )),
                           SizedBox(
                             height: 5,
                           ),
                           Text("Nike Jordan", style: TextStyle(
 
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Airbnb Cereal App",
-                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: "Airbnb Cereal",
+                            fontSize: 16,
                           )),
                           SizedBox(
                             height: 10,
                           ),
-                          Text("\$ 849.69",style: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontFamily: "Airbnb Cereal App",
-                            fontSize: 16,
+                          Text("\$849.69",style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontFamily: "Airbnb Cereal",
+                            fontSize: 14,
                           ))
                         ],
                       ),
@@ -88,7 +89,7 @@ class _ProductState extends State<Product> {
             ),
             Positioned(
              right: 8,
-                bottom: 8,
+                bottom: 10,
                 child: Image.asset("images/plus.png",height: 34,width: 35,))
           ],
         ),

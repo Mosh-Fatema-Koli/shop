@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
+import 'package:shop/src/view/screen/product/shoe_size.dart';
 import 'package:shop/src/view/widget/appbar.dart';
 
 
@@ -12,6 +13,8 @@ class ProductDtls extends StatefulWidget {
 }
 
 class _ProductDtlsState extends State<ProductDtls> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +38,7 @@ class _ProductDtlsState extends State<ProductDtls> {
 
           ),
           Positioned(
-            top: 30,
+            top: 40,
             right: 0,
             left: 0,
             child: Container(
@@ -51,7 +54,7 @@ class _ProductDtlsState extends State<ProductDtls> {
                         Get.back();
                       },
 
-                        child: Image.asset("images/back1.png",height: 30,width: 30,))),
+                        child: Image.asset("images/back1.png",height:35,width: 35,))),
                 Expanded(
                     flex: 3,
                     child: Center(child: Text("Man's Shoes",style: TextStyle(
@@ -67,12 +70,12 @@ class _ProductDtlsState extends State<ProductDtls> {
 
           ),),
           Positioned(
-              top: 80,
+              top: 100,
               right: 0,
               left: 0,
               child: Image.asset("images/Imag.png",height: 200,)),
           Positioned(
-              top: 280,
+              top: 300,
               right: 0,
               left: 0,
               child:Container(
@@ -107,7 +110,7 @@ class _ProductDtlsState extends State<ProductDtls> {
                   SizedBox(
                     height: 10,
                   ),
-                  Text("\$ 849.69",style: TextStyle(
+                  Text("\$849.69",style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontFamily: "Airbnb Cereal",
                     fontSize: 20,
@@ -209,72 +212,10 @@ class _ProductDtlsState extends State<ProductDtls> {
                   SizedBox(
                     height: 10,
                   ),
-                  Row(
-                    //mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                            decoration: BoxDecoration(
-                                color: HexColor("#F8F9FA"),
-                              borderRadius: BorderRadius.circular(100)
-                            ),
-                            height: 45,
-                            width: 45,
-                        child: Center(child: Text("37")),
-                          ),
-                      SizedBox(
-                       width: 10,
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                            color: HexColor("#F8F9FA"),
-                            borderRadius: BorderRadius.circular(100)
-                        ),
-                        height: 45,
-                        width: 45,
-                        child: Center(child: Text("38")),
-                      ),
-                      SizedBox(
-                       width: 10,
-                      ),
-
-                      Container(
-                        decoration: BoxDecoration(
-                            color: HexColor("#F8F9FA"),
-                            borderRadius: BorderRadius.circular(100)
-                        ),
-                        height: 45,
-                        width: 45,
-                        child: Center(child: Text("39")),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-
-                      Container(
-                        decoration: BoxDecoration(
-                            color: HexColor("#F8F9FA"),
-                            borderRadius: BorderRadius.circular(100)
-                        ),
-                        height: 45,
-                        width: 45,
-                        child: Center(child: Text("40")),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-
-                      Container(
-                        decoration: BoxDecoration(
-                            color: HexColor("#F8F9FA"),
-                            borderRadius: BorderRadius.circular(100)
-                        ),
-                        height: 45,
-                        width: 45,
-                        child: Center(child: Text("41")),
-                      ),
-
-                    ],
-                  ),
+                  Container(
+                    height: 50,
+                    child: SizeComponet(),
+                  )
 
 
                 ],
@@ -321,7 +262,7 @@ class _ProductDtlsState extends State<ProductDtls> {
                             SizedBox(
                               height: 10,
                             ),
-                            Text("\$ 849.69",style: TextStyle(
+                            Text("\$849.69",style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontFamily: "Airbnb Cereal",
                               fontSize: 20,

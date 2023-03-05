@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
-import 'package:shop/src/view/home/home.dart';
-import 'package:shop/src/view/home/tab_bar.dart';
+import 'package:shop/src/view/screen/home/home.dart';
 import 'package:shop/src/view/widget/appbar.dart';
 import 'package:shop/src/view/widget/drawerService.dart';
 

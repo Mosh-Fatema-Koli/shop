@@ -5,9 +5,9 @@ import 'package:get/get.dart';
 import 'package:shop/src/services/configs/app_colors.dart';
 import 'package:shop/src/services/helpers/k_Text.dart';
 import 'package:shop/src/services/helpers/render_img.dart';
+import 'package:shop/src/view/widget/bottom_nav.dart';
 import 'dart:async';
 
-import 'package:shop/src/view/home/home.dart';
 import 'package:shop/src/view/widget/nab_bar.dart';
 
 class SplashPage extends StatefulWidget {
@@ -22,7 +22,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
 
-   Timer(Duration(seconds: 3), () => Get.to(BottomNavBar()));
+   Timer(Duration(seconds: 3), () => Get.to(BottomNavBarV2()));
 
   }
 
@@ -38,10 +38,13 @@ class _SplashPageState extends State<SplashPage> {
         width:MediaQuery.of(context).size.width ,),
 
           Positioned(
-            top: 300,
+            top: 0,
               right: 0,
               left: 0,
-              child:  Center(child: Image.asset("images/logo.png",height: 36,width: 162,)))
+              child:  Container(
+                height: MediaQuery.of(context).size.height,
+                width:MediaQuery.of(context).size.width ,
+                  child: Center(child: Image.asset("images/Logo.png",height: 36,width: 162,))))
 
 
         ],

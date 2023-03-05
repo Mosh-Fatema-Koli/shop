@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
-import 'package:shop/src/view/home/product.dart';
+import 'package:shop/src/view/screen/home/product.dart';
 
 class Nick extends StatefulWidget {
   const Nick({Key? key}) : super(key: key);
@@ -19,14 +19,14 @@ class _NickState extends State<Nick> {
         child: Column(
           children: [
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Popular Shoes ",
                   style: TextStyle(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.bold,
                     fontFamily: "Airbnb Cereal",
                     fontSize: 16,
                   ),),
@@ -40,7 +40,7 @@ class _NickState extends State<Nick> {
               ],
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             Container(
                 height: 220,
@@ -52,7 +52,7 @@ class _NickState extends State<Nick> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("New Arrivals ", style: TextStyle(
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.bold,
                   fontFamily: "Airbnb Cereal",
                   fontSize: 16,
                 ),),
@@ -66,11 +66,14 @@ class _NickState extends State<Nick> {
               ],
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Container(
               height: 120,
-              color: Colors.white,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20)
+              ),
 
               child: Padding(
                 padding: const EdgeInsets.all(20),
@@ -86,8 +89,8 @@ class _NickState extends State<Nick> {
                               style: TextStyle(
                                 color: Colors.blue,
                                 fontWeight: FontWeight.w500,
-                                fontFamily: "Airbnb Cereal App",
-                                fontSize: 16,
+                                fontFamily: "Airbnb Cereal",
+                                fontSize: 12,
                               )),
                           SizedBox(
                             height: 4,
@@ -95,15 +98,15 @@ class _NickState extends State<Nick> {
                           Text("Nike Air Jordan", style: TextStyle(
 
                             fontWeight: FontWeight.w500,
-                            fontFamily: "Airbnb Cereal App",
+                            fontFamily: "Airbnb Cereal",
                             fontSize: 20,
                           )),
                           SizedBox(
                             height: 10,
                           ),
-                          Text("\$ 849.69",style: TextStyle(
+                          Text("\$849.69",style: TextStyle(
                             fontWeight: FontWeight.w500,
-                            fontFamily: "Airbnb Cereal App",
+                            fontFamily: "Airbnb Cereal",
                             fontSize: 16,
                           ))
                         ],

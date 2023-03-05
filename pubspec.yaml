@@ -59,6 +59,7 @@ dependencies:
   vertical_tab_bar_view: ^0.0.1
   image_picker:
   curved_navigation_bar: ^1.0.3
+  floating_bottom_bar:
 
 
 dev_dependencies:

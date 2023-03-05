@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
-import 'package:shop/src/view/home/home.dart';
+import 'package:shop/src/view/screen/home/home.dart';
 
 class ServiceDrawer extends StatefulWidget {
   const ServiceDrawer({Key? key}) : super(key: key);
@@ -154,13 +154,15 @@ class _ServiceDrawerState extends State<ServiceDrawer> {
               onTap: () {},
             ),
             SizedBox(height:30),
-        Divider(
-          height: 2,
-          color: HexColor("#2D3B48"),
-          thickness: 1,
-          indent: 20,
-          endIndent:60 ,
-        ),
+
+            Divider(
+              height: 2,
+              color: HexColor("#2D3B48"),
+              thickness: 1,
+              indent: 20,
+              endIndent:90 ,
+            ),
+
             SizedBox(height:30),
             ListTile(
               leading: Image.asset("images/SignOut.png",height: 24,width: 24,),
