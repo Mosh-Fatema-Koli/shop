@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
 import 'package:shop/src/view/screen/home/product.dart';
+import 'package:shop/src/view/screen/product/nick_all_product.dart';
 
 class Nick extends StatefulWidget {
   const Nick({Key? key}) : super(key: key);
@@ -30,13 +32,18 @@ class _NickState extends State<Nick> {
                     fontFamily: "Airbnb Cereal",
                     fontSize: 16,
                   ),),
-                Text("See all",
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontWeight: FontWeight.w500,
-                    fontFamily: "Airbnb Cereal",
-                    fontSize: 12,
-                  ),),
+                GestureDetector(
+                  onTap: (){
+                    Get.to(NickProduct());
+                  },
+                  child: Text("See all",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontWeight: FontWeight.w500,
+                      fontFamily: "Airbnb Cereal",
+                      fontSize: 12,
+                    ),),
+                ),
               ],
             ),
             SizedBox(
