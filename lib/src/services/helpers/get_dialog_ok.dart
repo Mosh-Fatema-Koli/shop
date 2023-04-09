@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shop/src/services/configs/app_colors.dart';
+import 'package:shop/src/view/widget/app_colors.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
 import 'package:shop/src/services/helpers/k_Text.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';

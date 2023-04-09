@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
-import '../configs/app_colors.dart';
+import '../../view/widget/app_colors.dart';
 
 class KText extends StatelessWidget {
   final String? text;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop/src/services/configs/app_colors.dart';
+import 'package:shop/src/view/widget/app_colors.dart';
 
 
 class Loading extends StatelessWidget {

@@ -1,9 +1,8 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shop/src/services/controller/base_controller.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
-import 'package:shop/src/view/controller/base_controller.dart';
+
 
 class SizeComponet extends StatelessWidget  with BaseController{
   @override

@@ -1,16 +1,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shop/src/services/configs/app_colors.dart';
+import 'package:shop/src/view/widget/app_colors.dart';
 
 
-import 'package:shop/src/services/configs/app_utils.dart';
+import 'package:shop/src/view/widget/app_utils.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
 import 'package:shop/src/view/screen/home/nike_brand%20product.dart';
 
-import 'package:shop/src/view/widget/appbar.dart';
+import 'package:shop/src/view/screen/appbar.dart';
 import 'package:shop/src/view/widget/custom_TextField.dart';
-import 'package:shop/src/view/widget/drawerService.dart';
+import 'package:shop/src/view/screen/drawerService.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -49,8 +49,9 @@ class _HomePageState extends State<HomePage> {
                   child:  TabBar(
 
                     isScrollable: true,
+
                     padding: EdgeInsets.all(10),
-                   //ss indicatorPadding: const EdgeInsets.only(top: 33, bottom: 2),
+                  // indicatorPadding: const EdgeInsets.only(top: 33, bottom: 2),
                     indicator: BoxDecoration(
 
                         color: Colors.blue,
@@ -58,6 +59,7 @@ class _HomePageState extends State<HomePage> {
                     ) ,
 
                     labelColor: Colors.white,
+                   unselectedLabelColor: Colors.blue,
 
                    // unselectedLabelColor: Colors.black,
 
@@ -76,8 +78,8 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             children: [
                               Image.asset("images/Frame8.png",height: 44,width: 44,),
-                            /*  SizedBox(width: 5,),
-                              Text("Puma")*/
+                              SizedBox(width: 5,),
+                              Text("Puma")
                             ],
                           ),
                         ),
@@ -86,8 +88,8 @@ class _HomePageState extends State<HomePage> {
                         child: Row(
                           children: [
                             Image.asset("images/Frame9.png",height: 44,width: 44,),
-                          /*  SizedBox(width: 5,),
-                            Text("Under Armour")*/
+                             SizedBox(width: 5,),
+                            Text("Under Armour")
                           ],
                         ),
                       ),
@@ -95,8 +97,8 @@ class _HomePageState extends State<HomePage> {
                         child: Row(
                           children: [
                             Image.asset("images/Frame 10.png",height:44,width: 44,),
-                          /*  SizedBox(width: 5,),
-                            Text("adidas")*/
+                         SizedBox(width: 5,),
+                            Text("adidas")
 
                           ],
                         ),
@@ -105,8 +107,8 @@ class _HomePageState extends State<HomePage> {
                         child: Row(
                           children: [
                             Image.asset("images/Frame 11.png",height: 44,width: 44,),
-                            /*SizedBox(width: 5,),
-                            Text("Converse")*/
+                            SizedBox(width: 5,),
+                            Text("Converse")
                           ],
                         ),
                       ),

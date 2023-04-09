@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../configs/constants.dart';
+import '../../view/widget/constants.dart';
 
 class RenderSvg extends StatelessWidget {
   final String path;

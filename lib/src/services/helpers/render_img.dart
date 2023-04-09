@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../configs/constants.dart';
+import '../../view/widget/constants.dart';
 
 class RenderImg extends StatelessWidget {
   final String path;

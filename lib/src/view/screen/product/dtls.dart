@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
 import 'package:shop/src/view/screen/product/shoe_size.dart';
-import 'package:shop/src/view/widget/appbar.dart';
+import 'package:shop/src/view/screen/appbar.dart';
 
 
 class ProductDtls extends StatefulWidget {
