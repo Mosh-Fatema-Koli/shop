@@ -20,14 +20,14 @@ class CartPage extends StatelessWidget {
               children: [
                 Card(
                   child: Container(
-                    height: 100,
+                    height: 80,
                     width: MediaQuery.of(context).size.width,
                     child: Row(
 
                       children: [
                         Container(
                           width: 100,
-                          height: 100,
+                          height: 80,
                           color: Colors.blue,
                         ),
                         SizedBox(

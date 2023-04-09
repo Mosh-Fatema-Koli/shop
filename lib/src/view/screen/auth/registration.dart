@@ -47,12 +47,13 @@ class RegisterPage extends StatelessWidget {
                 isPassword: true,
 
               ),
-              SignUpTextField(
+              TextboxWidget(
                 controller: _nameController,
                 hintText: "Confirm Password",
-                suffixIcon: Icon(Icons.visibility_off),
+                isPassword: true,
 
               ),
+
               SizedBox(
                 height: 5,
               ),

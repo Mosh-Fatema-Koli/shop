@@ -44,6 +44,11 @@ dependencies:
   intl:
   flutter_image_compress:
   flutter_svg:
+  change_app_package_name:
+  firebase_auth: ^4.2.0
+  firebase_core:
+  cloud_firestore: ^4.2.0
+  banner_carousel: ^1.2.1
 
 
 

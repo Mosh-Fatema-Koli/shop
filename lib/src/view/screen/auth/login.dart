@@ -32,7 +32,7 @@ class LoginPage extends StatelessWidget {
                   SignUpTextField(
                     controller: _email,
                     hintText: "email",
-                    suffixIcon: Icon(Icons.email,size: 20,color: Colors.blue,),
+                    suffixIcon: Icon(Icons.email,size: 20,),
                   ),
                   TextboxWidget(
                     controller: _password,
@@ -83,7 +83,7 @@ class LoginPage extends StatelessWidget {
                       ),
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                        backgroundImage: AssetImage('images/insta.png'),
+                        backgroundImage: AssetImage('images/google.png'),
 
                       ),
                       SizedBox(
@@ -91,9 +91,10 @@ class LoginPage extends StatelessWidget {
                       ),
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                        backgroundImage: AssetImage('images/google.png'),
+                        backgroundImage: AssetImage('images/apple.png'),
 
                       ),
+
 
                     ],
                   ),

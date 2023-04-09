@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shop/src/view/screen/splash.dart';
-
 import 'view/widget/app_theme.dart';
-import 'services/routes/app_router_service.dart';
+
 
 class App extends StatelessWidget {
   @override

@@ -1,14 +1,8 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shop/src/services/configs/app_colors.dart';
-import 'package:shop/src/services/helpers/k_Text.dart';
-import 'package:shop/src/services/helpers/render_img.dart';
 import 'package:shop/src/view/widget/bottom_nav.dart';
 import 'dart:async';
 
-import 'package:shop/src/view/widget/nab_bar.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
