@@ -1,18 +1,26 @@
+import 'dart:io';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:shop/src/view/screen/auth/registration.dart';
 import 'package:shop/src/view/screen/main_screen.dart';
-import 'package:shop/src/view/widget/button.dart';
 import 'package:shop/src/view/widget/custom_TextField.dart';
 import 'package:shop/src/view/widget/text_style.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPage extends StatelessWidget {
    LoginPage({Key? key}) : super(key: key);
 
   TextEditingController _email = TextEditingController();
   TextEditingController _password = TextEditingController();
-  @override
+
+   bool isLoading = false;
+
+
+   final FirebaseAuth _auth = FirebaseAuth.instance;
+   final GoogleSignIn _googleSignIn = GoogleSignIn();
+
+   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(child: Card(
@@ -40,9 +48,14 @@ class LoginPage extends StatelessWidget {
                     isPassword: true,
 
                   ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text("Forget Password?",style: TextStyle(color: Colors.blue)),
+
 
                   SizedBox(
-                    height: 5,
+                    height: 20,
                   ),
                  MaterialButton(onPressed: (){
 
@@ -81,10 +94,15 @@ class LoginPage extends StatelessWidget {
                       SizedBox(
                         width: 8,
                       ),
-                      CircleAvatar(
-                        backgroundColor: Colors.white,
-                        backgroundImage: AssetImage('images/google.png'),
+                      GestureDetector(
+                        onTap: (){
+                          signInWithGoogle();
+                        },
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          backgroundImage: AssetImage('images/google.png'),
 
+                        ),
                       ),
                       SizedBox(
                         width: 8,
@@ -123,4 +141,24 @@ class LoginPage extends StatelessWidget {
 
     );
   }
+   signInWithGoogle() async {
+     // Trigger the authentication flow
+     final GoogleSignInAccount? googleUser = await GoogleSignIn(
+         scopes: <String>["email"]).signIn();
+
+     // Obtain the auth details from the request
+     final GoogleSignInAuthentication googleAuth = await googleUser!.authentication;
+
+     // Create a new credential
+     final credential = GoogleAuthProvider.credential(
+       accessToken: googleAuth.accessToken,
+       idToken: googleAuth.idToken,
+     );
+     Get.off(BottomNavBarV2());
+
+     // Once signed in, return the UserCredential
+     return await FirebaseAuth.instance.signInWithCredential(credential);
+   }
+
+
 }

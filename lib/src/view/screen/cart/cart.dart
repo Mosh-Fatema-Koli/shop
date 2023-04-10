@@ -28,7 +28,7 @@ class CartPage extends StatelessWidget {
                       children: [
                         Container(
                           width: 100,
-                          height: 100,
+                          height: 80,
                           child: Image.asset("images/Frame 294.png"),
                         ),
                         SizedBox(
@@ -37,23 +37,33 @@ class CartPage extends StatelessWidget {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("NameNameName",style: TextStyle(fontSize: 14),),
-                            Text("1200 * 2"),
-                            Text("= 1200",style: TextStyle(fontSize: 14),),
+                            Text("NameNameName",style: TextStyle(fontSize: 16),),
 
+                            Row(
+
+                              children: [
+                                IconButton(onPressed: (){}, icon: Icon(Icons.maximize,size: 18,)),
+                                Text("2"),
+                                IconButton(onPressed: (){}, icon: Icon(Icons.add_circle_rounded,size: 18,)),
+
+                              ],
+                            ),
 
                           ],
                         ),
-
-                        Row(
-
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            IconButton(onPressed: (){}, icon: Icon(Icons.maximize,size: 18,)),
-                            Text("2"),
-                            IconButton(onPressed: (){}, icon: Icon(Icons.add_circle_rounded,size: 18,)),
-
+                            Text("1200 * 2"),
+                            SizedBox(height: 10,),
+                            Text("= 1200",style: TextStyle(fontSize: 16),),
                           ],
-                        ),
+                        )
+
+
                       ],
                     ),
                   ),
@@ -61,6 +71,29 @@ class CartPage extends StatelessWidget {
               ],
             ),
           ),
+          Card(
+            child: Container(
+              height:70,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 15,horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Total",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+                        Text("500 /=",style: TextStyle(color: Colors.blue,fontSize: 16),)
+                      ],
+                    ),
+                    MaterialButton(onPressed: (){},color: Colors.blue,
+
+                      child: Text("Check Out"),)
+                  ],
+                ),
+              ),
+            ),
+          )
+
 
 
 
