@@ -50,6 +50,8 @@ dependencies:
   cloud_firestore: ^4.2.0
   banner_carousel: ^1.2.1
   google_sign_in:
+  google_maps_flutter:
+  geolocator:
 
 
 

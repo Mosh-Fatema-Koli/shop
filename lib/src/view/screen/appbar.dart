@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shop/src/services/helpers/hexcolor.dart';
 import 'package:shop/src/view/screen/cart/cart.dart';
+import 'package:shop/src/view/screen/home/location.dart';
 
 
 class IconWidget extends StatelessWidget {
@@ -49,18 +50,23 @@ setAppBar() {
      padding: const EdgeInsets.only(left: 10),
      child: IconWidget(),
    ) ,
-    title: Center(
-      child: Column(
-        children: [
-          Text("Store location",style: TextStyle(color: Colors.grey,fontSize: 10),),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.location_on,color: Colors.red,size: 15,),
-              Text("Mondolibug, Sylhet",style: TextStyle(color: Colors.black,fontSize: 14),),
-            ],
-          )
-        ],
+    title: GestureDetector(
+      onTap: (){
+        Get.to(CurrentLocationScreen());
+      },
+      child: Center(
+        child: Column(
+          children: [
+            Text("Store location",style: TextStyle(color: Colors.grey,fontSize: 10),),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.location_on,color: Colors.red,size: 15,),
+                Text("Mondolibug, Sylhet",style: TextStyle(color: Colors.black,fontSize: 14),),
+              ],
+            )
+          ],
+        ),
       ),
     ),
   actions: [Padding(
