@@ -52,6 +52,7 @@ dependencies:
   google_sign_in:
   google_maps_flutter:
   geolocator:
+  sslcommerz:
 
 
 

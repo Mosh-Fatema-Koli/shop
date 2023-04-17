@@ -73,6 +73,10 @@ class _ProfilePageState extends State<ProfilePage> {
               ListTile(
                 title: Text("Contact Us"),
                 trailing:Icon(Icons.arrow_forward_ios_rounded,size: 15,),
+              ),
+              ListTile(
+                title: Text("Sign Out"),
+
               )
 
             ],

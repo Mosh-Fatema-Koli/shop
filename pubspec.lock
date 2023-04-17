@@ -581,6 +581,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  sslcommerz:
+    dependency: "direct main"
+    description:
+      name: sslcommerz
+      sha256: "9c4f988baab6a6d3def3d3b98f271423d3a711deb62062af98c5da5b4795faa2"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
   stack_trace:
     dependency: transitive
     description:
